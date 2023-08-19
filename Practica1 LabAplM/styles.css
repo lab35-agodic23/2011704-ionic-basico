@@ -1,0 +1,13 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+
+button{
+    border-radius: 15px;
+    border-color: aqua;
+    
+}
