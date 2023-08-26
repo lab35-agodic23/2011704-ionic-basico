@@ -5,7 +5,7 @@ function login(){
     const password = document.getElementById('txtPassword');
     const textousuario = usuario.value;
 
-
+    salida.innerHTML = '';
 
     if(!(textousuario=='') && !(password.value == '')){
         const listItem = document.createElement('div');
@@ -21,7 +21,7 @@ function registro(){
     const password = document.getElementById('txtPassword');
     const textousuario = usuario.value;
 
-
+    salida.innerHTML = '';
     if(!(textousuario=='') && !(password.value == '')){
         const listItem = document.createElement('div');
         listItem.textContent = `Registro con exito ${textousuario}`;
