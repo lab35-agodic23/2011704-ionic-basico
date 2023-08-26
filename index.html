@@ -6,16 +6,25 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.js">
     <link rel="stylesheet" href="">
-    <title>Practica 1</title>
+    <title>Practica 3</title>
 </head>
 <body>
-    <h1>Encabezado</h1>
-    <div>
-        <input type="text" id="txt1" placeholder="Texto">
-        <button type="button" id="btnEnviar" onclick="mostrarAlerta()">Enviar</button>
-        <button id="btnBorrar" onclick="borrarTexto()">Borrar</button>
+    <div id="entradagen">
+        <div class="entradas">
+            <label for="txtUser">Usuario</label>
+            <input id="txtUser" type="text">
+        </div>
+        <div class="entradas">
+            <label for="txtPassword">Contraseña</label>
+            <input id="txtPassword" type="password">
+        </div>
     </div>
-    
+    <div class="botones">
+        <button onclick="login()">Iniciar Sesion</button>
+        <br>
+        <button onclick="registro()">Registrarme</button>
+    </div>
+    <span id="salida"></span>
     <script src="index.js"></script>
 </body>
 </html>

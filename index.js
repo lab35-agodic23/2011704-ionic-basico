@@ -1,9 +1,32 @@
-var campoTexto = document.getElementById('txt1');
-function mostrarAlerta(){
-    if(!(campoTexto.value == ''))
-        alert(campoTexto.value);
+const salida =document.getElementById('salida');
+
+function login(){
+    const usuario = document.getElementById('txtUser');
+    const password = document.getElementById('txtPassword');
+    const textousuario = usuario.value;
+
+
+
+    if(!(textousuario=='') && !(password.value == '')){
+        const listItem = document.createElement('div');
+        listItem.textContent = `Login correcto ${textousuario}`;
+        salida.appendChild(listItem);
+        usuario.value = '';
+        password.value = '';
+    }
 }
 
-function borrarTexto(){
-    campoTexto.value = '';
+function registro(){
+    const usuario = document.getElementById('txtUser');
+    const password = document.getElementById('txtPassword');
+    const textousuario = usuario.value;
+
+
+    if(!(textousuario=='') && !(password.value == '')){
+        const listItem = document.createElement('div');
+        listItem.textContent = `Registro con exito ${textousuario}`;
+        salida.appendChild(listItem);
+        usuario.value = '';
+        password.value = '';
+    }
 }

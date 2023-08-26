@@ -1,13 +1,35 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: antiquewhite;
     padding: 15px;
     padding-left: 20px;
+    text-align: center;
 }
 
 
+.entradas input{
+    align-items: center;
+
+    border-style: none;
+    background-color: #d9d9d9;
+    margin: 0 20px;
+}
+
+.entradas #txtUser {
+    margin-left: 47px;
+}
+
+.botones{
+    display: block;
+    align-content: center;
+    margin-top: 10px;
+}
+
 button{
     border-radius: 15px;
-    border-color: aqua;
-    
+    border-style: none;
+    background-color: #620d4f;
+    color: white;
+    margin: 5px;
+    width: 170px;
+    height: 20px;
 }
