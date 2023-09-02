@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="index.js">
-    <link rel="stylesheet" href="">
-    <title>Practica 3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <title>Practica 4</title>
 </head>
 <body>
-    <div id="entradagen">
-        <div class="entradas">
-            <label for="txtUser">Usuario</label>
-            <input id="txtUser" type="text">
-        </div>
-        <div class="entradas">
-            <label for="txtPassword">Contraseña</label>
-            <input id="txtPassword" type="password">
-        </div>
-    </div>
-    <div class="botones">
-        <button onclick="login()">Iniciar Sesion</button>
-        <br>
-        <button onclick="registro()">Registrarme</button>
-    </div>
-    <span id="salida"></span>
+    <ion-header>
+        <ion-toolbar>
+          <ion-title><b>Presupuesto</b> </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <br>
+      <ion-input id="gasto" [clearInput]="true"  label="Tipo de Gasto" label-placement="floating" fill="outline" placeholder="Enter Text"></ion-input>
+      <br/>
+      <ion-input id="monto" label="Monto" label-placement="floating" fill="outline" placeholder="El Money" ></ion-input>
+
+
+      <ion-button onclick="guardar()">Guardar</ion-button> 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

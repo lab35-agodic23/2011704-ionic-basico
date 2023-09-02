@@ -1,32 +1,13 @@
-const salida =document.getElementById('salida');
+const presupuesto = [];
 
-function login(){
-    const usuario = document.getElementById('txtUser');
-    const password = document.getElementById('txtPassword');
-    const textousuario = usuario.value;
+function guardar() {
+    var gasto = document.getElementById('gasto').value;
+    var monto = parseFloat(document.getElementById('monto').value);
 
-    salida.innerHTML = '';
-
-    if(!(textousuario=='') && !(password.value == '')){
-        const listItem = document.createElement('div');
-        listItem.textContent = `Login correcto ${textousuario}`;
-        salida.appendChild(listItem);
-        usuario.value = '';
-        password.value = '';
-    }
-}
-
-function registro(){
-    const usuario = document.getElementById('txtUser');
-    const password = document.getElementById('txtPassword');
-    const textousuario = usuario.value;
-
-    salida.innerHTML = '';
-    if(!(textousuario=='') && !(password.value == '')){
-        const listItem = document.createElement('div');
-        listItem.textContent = `Registro con exito ${textousuario}`;
-        salida.appendChild(listItem);
-        usuario.value = '';
-        password.value = '';
+    if( gasto && !isNaN(monto)){
+       var texto = `${gasto}: $${monto}`;
+       presupuesto.push(texto); 
+       console.log(presupuesto);
+       
     }
 }
