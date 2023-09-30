@@ -1,20 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-lista-alumnos',
-  templateUrl: './lista-alumnos.component.html',
-  styleUrls: ['./lista-alumnos.component.scss'],
-})
-export class ListaAlumnosComponent  implements OnInit {
-
-  constructor() { }
-
-  alumnos : any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Baraba", "Georgina", "Kevin"];
-
-  ngOnInit() {}
-
-}
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: 'app-lista-alumnos',
