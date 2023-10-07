@@ -11,5 +11,21 @@ export class ListaAlumnosComponent  implements OnInit {
 
   ngOnInit() {}
 
-  alumnos : any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Baraba", "Georgina", "Kevin"];
+  alumnos : any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Barbara", "Georgina", "Kevin"];
+  public actionSheetButtons = [
+    {
+      text: 'Eliminar',
+      role: 'destructive',
+      data: {
+        action: 'delete',
+      },
+    },
+    {
+      text: 'Cancelar',
+      role: 'cancel',
+      data: {
+        action: 'cancel',
+      },
+    },
+  ];
 }
