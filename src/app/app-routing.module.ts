@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ProductosComponent } from './productos/productos.component';
 import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component';
+import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
 
 const routes: Routes = [
   {
@@ -14,13 +15,17 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'productos',
+    redirectTo: 'alumnos',
     pathMatch: 'full'
   },
   {
     path: 'producto/:id',
     component: ProductoDetalleComponent,
   },
+  {
+    path: 'alumnos',
+    component: ListaAlumnosComponent,
+  }
   
 ];
 
