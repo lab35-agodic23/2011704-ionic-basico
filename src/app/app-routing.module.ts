@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'alumnos',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
